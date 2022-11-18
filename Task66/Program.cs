@@ -5,19 +5,19 @@
 // M = 4; N = 8. -> 30
 
 Console.WriteLine("Введите натуральное число M:");
-int number1 = Convert.ToInt32(Console.ReadLine());
-while (number1 <= 0)
+int m = Convert.ToInt32(Console.ReadLine());
+while (m <= 0)
 {
     Console.WriteLine("Число должно быть натуральным. Повторите ввод числа M:");
-    number1 = Convert.ToInt32(Console.ReadLine());
+    m = Convert.ToInt32(Console.ReadLine());
 }
 Console.WriteLine("Введите натуральное число N:");
-int number2 = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 
-while (number2 <= 0)
+while (n <= 0)
 {
     Console.WriteLine("Число должно быть натуральным. Повторите ввод числа N:");
-    number2 = Convert.ToInt32(Console.ReadLine());
+    n = Convert.ToInt32(Console.ReadLine());
 }
 
 void SumNaturalNumbers(int num1, int num2, int sum)
@@ -35,7 +35,7 @@ void SumNaturalNumbers(int num1, int num2, int sum)
 
 }
 
-if (number1 < number2)
-SumNaturalNumbers(number1, number2, 0);
+if (m < n)
+SumNaturalNumbers(m, n, 0);
 else
-SumNaturalNumbers(number2, number1, 0);
+SumNaturalNumbers(n, m, 0);
