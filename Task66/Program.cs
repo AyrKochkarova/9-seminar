@@ -20,7 +20,7 @@ while (number2 <= 0)
     number2 = Convert.ToInt32(Console.ReadLine());
 }
 
-void NaturalNumbers(int num1, int num2, int sum)
+void SumNaturalNumbers(int num1, int num2, int sum)
 {
 
     if (num1 > num2)
@@ -30,12 +30,12 @@ void NaturalNumbers(int num1, int num2, int sum)
     else
     {
         sum += num1;
-        NaturalNumbers(num1 + 1, num2, sum);
+        SumNaturalNumbers(num1 + 1, num2, sum);
     }
 
 }
 
 if (number1 < number2)
-NaturalNumbers(number1, number2, 0);
+SumNaturalNumbers(number1, number2, 0);
 else
-NaturalNumbers(number2, number1, 0);
+SumNaturalNumbers(number2, number1, 0);
